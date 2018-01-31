@@ -13,6 +13,16 @@ module.exports = {
   module: {
     rules: [
       {
+        enforce: 'pre',
+        test: /\.jsx?$/,
+        use: ['standard-loader'],
+        exclude: /(node_modules|bower_components)/
+      },
+      {
+        test: /\.pug/,
+        use: ['pug-loader']
+      },
+      {
         test: /\.scss$/,
           use: ExtractTextPlugin.extract({
             use: [
