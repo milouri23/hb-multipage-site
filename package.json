@@ -1,0 +1,20 @@
+{
+  "name": "hb-multipage-site",
+  "version": "1.0.0",
+  "description": "This exercise will help you to have a better understanding of the correct structure of a web project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milouri23/hb-multipage-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milouri23/hb-multipage-site/issues"
+  },
+  "homepage": "https://github.com/milouri23/hb-multipage-site#readme"
+}
