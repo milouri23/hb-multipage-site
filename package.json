@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/milouri23/hb-multipage-site/issues"
   },
-  "homepage": "https://github.com/milouri23/hb-multipage-site#readme"
+  "homepage": "https://github.com/milouri23/hb-multipage-site#readme",
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  }
 }
