@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const styleLintPlugin = require('stylelint-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const path = require('path')
 
 module.exports = {
@@ -26,7 +27,10 @@ module.exports = {
         test: /\.scss$/,
           use: ExtractTextPlugin.extract({
             use: [
-              'css-loader?sourceMap',
+              {
+                loader: 'css-loader?sourceMap',
+                options: {minimize: true, sourceMap: true}
+              },
               'sass-loader'
             ]
           })
@@ -44,6 +48,14 @@ module.exports = {
       files: '**/*.scss',
       failOnError: false,
       quiet: false,
+    }),
+    new UglifyJsPlugin({
+      uglifyOptions: {
+        beautify: false,
+        ecma: 6,
+        compress: true,
+        comments: false
+      }
     })
   ]
 }
