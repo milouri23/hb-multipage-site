@@ -4,7 +4,8 @@
   "description": "This exercise will help you to have a better understanding of the correct structure of a web project.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
